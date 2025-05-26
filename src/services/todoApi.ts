@@ -1,11 +1,11 @@
 import axios from "axios";
 
 // APIのベースURL（NestJSバックエンド）
-const API_BASE_URL = "http://localhost:3001";
+const API_URL = "http://localhost:3000/api";
 
 // axiosインスタンスの作成
 const apiClient = axios.create({
-  baseURL: API_BASE_URL,
+  baseURL: API_URL,
   headers: {
     "Content-Type": "application/json",
   },
@@ -60,8 +60,7 @@ export const todoApi = {
   },
 
   // Todoを削除
-  deleteTodo: async (id: number): Promise<Todo> => {
-    const response = await apiClient.delete(`/todos/${id}`);
-    return response.data;
+  deleteTodo: async (id: number): Promise<void> => {
+    await apiClient.delete(`/todos/${id}`);
   },
 };

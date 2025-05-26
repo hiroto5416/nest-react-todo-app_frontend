@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/alert": "^2.2.2",
+    "@chakra-ui/card": "^2.2.0",
+    "@chakra-ui/checkbox": "^2.3.2",
+    "@chakra-ui/form-control": "^2.2.0",
+    "@chakra-ui/icons": "^2.2.4",
     "@chakra-ui/react": "^3.19.1",
     "@emotion/react": "^11.14.0",
     "@reduxjs/toolkit": "^2.8.2",
